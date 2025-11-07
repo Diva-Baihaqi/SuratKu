@@ -1,0 +1,27 @@
+<!-- views/errors/404.ejs -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <h1 class="display-1 text-danger">404</h1>
+      <h2 class="mb-4">Halaman Tidak Ditemukan</h2>
+      <p class="lead text-muted">Maaf, halaman yang Anda cari tidak tersedia atau telah dipindahkan.</p>
+      <div class="mt-4">
+        <% if (locals.user && locals.user.name) { %>
+          <!-- Jika sudah login → kembali ke dashboard -->
+          <a href="/admin/dashboard" class="btn btn-primary me-2"> Kembali ke Dashboard </a>
+          <% } else { %>
+            <!-- Jika belum login → ke halaman login -->
+            <a href="/auth/login" class="btn btn-primary me-2"> Login </a>
+            <% } %>
+              <a href="/" class="btn btn-outline-secondary">Beranda</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-5">
+  <h1 class="display-1 text-danger">404</h1>
+  <h3>Halaman Tidak Ditemukan</h3>
+  <p class="lead">Maaf, halaman yang Anda cari tidak tersedia atau telah dipindahkan.</p>
+  <a href="/admin/dashboard" class="btn btn-primary me-2">Kembali ke Dashboard</a>
+  <a href="/" class="btn btn-outline-secondary">Beranda</a>
+</div>

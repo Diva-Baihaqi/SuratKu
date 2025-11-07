@@ -1,0 +1,168 @@
+<%- include('../partials/header') %>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <%- include('../partials/sidebar-admin') %>
+
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 border-bottom">
+            <h1 class="h2">Dashboard Admin</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <span class="text-muted fw-medium">Halo, <strong class="text-primary">
+                  <%= userName %>
+                </strong>!</span>
+            </div>
+          </div>
+
+          <%- include('../partials/messages') %>
+
+            <!-- Statistik Cards -->
+            <div class="row g-4 mb-4">
+              <!-- Surat Masuk -->
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100" style="
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            overflow: hidden;
+          ">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <h6 class="card-subtitle mb-2 opacity-90">Surat Masuk</h6>
+                        <h3 class="card-title mb-1">
+                          <%= totalSuratMasuk %>
+                        </h3>
+                        <p class="card-text opacity-80 fs-7">Diterima hari ini</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="1.8">
+                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                        <path
+                          d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Surat Keluar -->
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100" style="
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            overflow: hidden;
+          ">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <h6 class="card-subtitle mb-2 opacity-90">Surat Keluar</h6>
+                        <h3 class="card-title mb-1">
+                          <%= totalSuratKeluar %>
+                        </h3>
+                        <p class="card-text opacity-80 fs-7">Dikirim hari ini</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="1.8">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Total Arsip -->
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100" style="
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            overflow: hidden;
+          ">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <h6 class="card-subtitle mb-2 opacity-90">Total Arsip</h6>
+                        <h3 class="card-title mb-1">
+                          <%= totalArsip %>
+                        </h3>
+                        <p class="card-text opacity-80 fs-7">Dokumen tersimpan</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="1.8">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aktivitas Terbaru -->
+            <div class="card border-0 shadow-sm rounded-3">
+              <div class="card-header bg-white py-3 border-0">
+                <h3 class="h5 mb-0 d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-clock-history me-2" viewBox="0 0 16 16">
+                    <path
+                      d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.237-.97c.366.084.746.209 1.124.375l-.362.932zm1.23 1.162a7 7 0 0 0-.403-.821l.91.413a6.96 6.96 0 0 1 .418.81zm.655 1.64a7 7 0 0 0-.538-.784l.774.633a6.958 6.958 0 0 1 .544.775l-.78.625zm-.64 1.646a7.005 7.005 0 0 0-.78-.54l.57.778a6.958 6.958 0 0 1 .776.546l-.566.77zm-.82.511a7.003 7.003 0 0 0-.793-.402l.372.928a6.964 6.964 0 0 1 .788.404L14.5 12.3zm-.82.511a7.003 7.003 0 0 0-.793-.402l.372.928a6.964 6.964 0 0 1 .788.404L14.5 12.3zm-.82.511a7.003 7.003 0 0 0-.793-.402l.372.928a6.964 6.964 0 0 1 .788.404L14.5 12.3zm-.82.511a7.003 7.003 0 0 0-.793-.402l.372.928a6.964 6.964 0 0 1 .788.404L14.5 12.3z" />
+                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                    <path
+                      d="M7.5 3a.5.5 0 0 1 .5.5v5.293l2.646 2.647a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1-.146-.5V3.5a.5.5 0 0 1 .5-.5z" />
+                  </svg>
+                  Aktivitas Terbaru
+                </h3>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-hover mb-0">
+                    <thead class="table-light">
+                      <tr>
+                        <th width="5%">#</th>
+                        <th>Aktivitas</th>
+                        <th width="25%">Waktu</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% if (activities.length===0) { %>
+                        <tr>
+                          <td colspan="3" class="text-center text-muted py-3">Belum ada aktivitas.</td>
+                        </tr>
+                        <% } else { %>
+                          <% activities.forEach((act, i)=> { %>
+                            <tr>
+                              <td>
+                                <%= i + 1 %>
+                              </td>
+                              <td>
+                                <%= act.activity %>
+                              </td>
+                              <td><span class="badge bg-secondary rounded-pill">
+                                  <%= act.timeAgo %>
+                                </span></td>
+                            </tr>
+                            <% }) %>
+                              <% } %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </main>
+    </div>
+  </div>
+
+  <%- include('../partials/footer') %>
