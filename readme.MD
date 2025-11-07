@@ -1,5 +1,4 @@
 # 📬 SuratKu - Sistem Persuratan Digital Terpadu
-
 ![SuratKu Banner](https://i.ibb.co/8D1hv4CV/umc.jpg)
 
 **Sistem Persuratan Digital Terpadu untuk Pelayanan Publik yang Lebih Efektif**
@@ -10,7 +9,7 @@
 
 **SuratKu** adalah aplikasi berbasis web untuk mengelola surat masuk dan surat keluar secara digital. Dirancang khusus untuk instansi pemerintah, sekolah, dan organisasi yang membutuhkan sistem persuratan yang efisien, aman, dan terintegrasi.
 
-Aplikasi ini menggantikan sistem administrasi surat konvensional dengan solusi digital modern yang memudahkan proses pencatatan, pelacakan, dan arsip surat secara real-time.
+Aplikasi ini Open Source dapat menggantikan sistem administrasi surat konvensional dengan solusi digital modern yang memudahkan proses pencatatan, pelacakan, dan arsip surat secara real-time.
 
 ---
 
@@ -203,8 +202,8 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE unt
 Untuk pertanyaan lebih lanjut, silakan hubungi:
 
 **Bang Div**  
-📧 Email: bangdiv@example.com  
-💻 GitHub: [@bangdiv](https://github.com/bangdiv)
+📧 Email: bangdiv.dev@gmail.com  
+💻 GitHub: [@bangdiv](https://github.com/Diva-Baihaqi)
 
 ---
 
@@ -213,3 +212,4 @@ Untuk pertanyaan lebih lanjut, silakan hubungi:
 ---
 
 ⭐ Jangan lupa berikan star pada repository ini jika Anda menyukai proyek ini! ⭐
+
