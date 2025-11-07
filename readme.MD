@@ -1,6 +1,4 @@
 # 📬 SuratKu - Sistem Persuratan Digital Terpadu
-![SuratKu Banner](https://i.ibb.co/8D1hv4CV/umc.jpg)
-
 **Sistem Persuratan Digital Terpadu untuk Pelayanan Publik yang Lebih Efektif**
 
 ---
@@ -212,4 +210,5 @@ Untuk pertanyaan lebih lanjut, silakan hubungi:
 ---
 
 ⭐ Jangan lupa berikan star pada repository ini jika Anda menyukai proyek ini! ⭐
+
 
